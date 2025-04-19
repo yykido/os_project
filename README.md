@@ -31,8 +31,6 @@ This project demonstrates basic operating system concepts, including a shell and
 
   mkdir <dirname> – Create a new directory
   
-  mv <source> <dest> – Move or rename a file/directory
-  
   rename <oldname> <newname> – Rename a file/directory
   
   touch <filename> – Create a new file
