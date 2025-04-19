@@ -1,60 +1,51 @@
 # Custom Operating System
 
-This is a simple operating system project that demonstrates basic OS concepts.
+This project demonstrates basic operating system concepts, including a simple shell and a minimal kernel.  
+It was inspired by [cfenollosa/os-tutorial](https://github.com/cfenollosa/os-tutorial/tree/master).
 
-## Prerequisites
 
-Before building this OS, you need to install the following dependencies:
+# Custom Operating System
 
-### For macOS (using Homebrew):
-```bash
-# Install Homebrew if you don't have it
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+This project demonstrates basic operating system concepts, including a shell and a simple kernel.
 
-# Install required packages
-brew install i386-elf-gcc
-brew install i386-elf-binutils
-brew install nasm
-brew install qemu
-```
+## How to Run
 
-### For Ubuntu/Debian:
-```bash
-sudo apt-get update
-sudo apt-get install build-essential nasm qemu-system-x86
-# Install i386-elf toolchain
-sudo apt-get install gcc-multilib
-```
+### 1. Clone the repository:
+   ```bash
+   git clone https://github.com/yykido/os_project.git
+   cd os_project
+   ```
+### 2. unzip i386elfgcc.zip
+ ```bash
+   unzip i386elfgcc.zip -d .
+   ```
 
-### For Arch Linux:
-```bash
-sudo pacman -S nasm qemu
-# Install i386-elf toolchain
-sudo pacman -S gcc-multilib
-```
+### 3. Build the OS:
+  ```bash
+  make run
+  ```
 
-## Building the OS
+## Shell Command
+  ```bash
+  ls – List directory contents
 
-1. Clone this repository:
-```bash
-git clone https://github.com/yourusername/os_project.git
-cd os_project
-```
+  mkdir <dirname> – Create a new directory
+  
+  mv <source> <dest> – Move or rename a file/directory
+  
+  rename <oldname> <newname> – Rename a file/directory
+  
+  touch <filename> – Create a new file
+  
+  rm <name> – Remove a file or directory
+  
+  clear – Clear the screen
+  
+  help – Show help message
+  
+  quit – Exit the shell
+  ```
 
-2. Build the OS:
-```bash
-make
-```
-
-3. Run the OS in QEMU:
-```bash
-make run
-```
-
-4. For debugging:
-```bash
-make debug
-```
 
 ## Project Structure
 
@@ -73,7 +64,7 @@ make debug
 
 ## Troubleshooting
 
-If you encounter the error "i386-elf-gcc: No such file or directory", make sure you have installed the i386-elf toolchain as described in the Prerequisites section.
+If you encounter the error i386-elf-gcc: No such file or directory, ensure that you have extracted the i386elfgcc.zip file and installed the toolchain properly as described above.
 
 ## License
 
