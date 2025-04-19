@@ -17,8 +17,8 @@ This project demonstrates basic operating system concepts, including a shell and
    ```
 ### 2. unzip i386elfgcc.zip
  ```bash
-   unzip i386elfgcc.zip -d .
-   ```
+ unzip i386elfgcc.zip -d .
+ ```
 
 ### 3. Build the OS:
   ```bash
