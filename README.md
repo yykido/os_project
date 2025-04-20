@@ -3,11 +3,6 @@
 This project demonstrates basic operating system concepts, including a simple shell and a minimal kernel.  
 It was inspired by [cfenollosa/os-tutorial](https://github.com/cfenollosa/os-tutorial/tree/master).
 
-
-# Custom Operating System
-
-This project demonstrates basic operating system concepts, including a shell and a simple kernel.
-
 ## How to Run
 
 ### 1. Clone the repository:
@@ -31,13 +26,11 @@ This project demonstrates basic operating system concepts, including a shell and
 
   mkdir <dirname> – Create a new directory
   
-  mv <source> <dest> – Move or rename a file/directory
-  
   rename <oldname> <newname> – Rename a file/directory
   
   touch <filename> – Create a new file
   
-  rm <name> – Remove a file or directory
+  rm <name> – Remove a file
   
   clear – Clear the screen
   
