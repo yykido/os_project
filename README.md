@@ -38,7 +38,7 @@ It was inspired by [cfenollosa/os-tutorial](https://github.com/cfenollosa/os-tut
   
   quit – Exit the shell
   ```
-![Logo](screenshot.png)
+<img src="screenshot.jpg" width="50%" alt="Alt text">
 
 ## Project Structure
 
