@@ -35,7 +35,7 @@ This project demonstrates basic operating system concepts, including a shell and
   
   touch <filename> – Create a new file
   
-  rm <name> – Remove a file or directory
+  rm <name> – Remove a file
   
   clear – Clear the screen
   
