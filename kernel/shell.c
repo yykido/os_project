@@ -195,7 +195,7 @@ void shell_help() {
     kprint("Available commands:\n");
     kprint("ls - List directory contents\n");
     kprint("mkdir <dirname> - Create a new directory\n");
-    kprint("mv <source> <dest> - Move or rename a file/directory\n");
+    // kprint("mv <source> <dest> - Move or rename a file/directory\n");
     kprint("rename <oldname> <newname> - Rename a file/directory\n");
     kprint("touch <filename> - Create a new file\n");
     kprint("rm <name> - Remove a file or directory\n");
@@ -266,9 +266,11 @@ void shell_execute(char* input) {
 
     if (strcmp(command, "mkdir") == 0 && arg1[0] != '\0') {
         shell_mkdir(arg1);
-    } else if (strcmp(command, "mv") == 0 && arg1[0] != '\0' && arg2[0] != '\0') {
-        shell_mv(arg1, arg2);
-    } else if (strcmp(command, "rename") == 0 && arg1[0] != '\0' && arg2[0] != '\0') {
+    } 
+    // else if (strcmp(command, "mv") == 0 && arg1[0] != '\0' && arg2[0] != '\0') {
+    //     shell_mv(arg1, arg2);
+
+    else if (strcmp(command, "rename") == 0 && arg1[0] != '\0' && arg2[0] != '\0') {
         shell_rename(arg1, arg2);
     } else if (strcmp(command, "touch") == 0 && arg1[0] != '\0') {
         shell_touch(arg1);
